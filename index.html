@@ -19,26 +19,26 @@
       <div class="box-menu">
         <div class="box-hotline">
           <div class="hotline">
-            <span class="box-icon">
+            <div class="box-icon">
               <img class="icon-hotline" src="img/icon-phone.png" alt="icon-hotline">
-            </span>
-            <span class="content">
+            </div>
+            <div class="content">
               <p class="title">Customer service</p>
               <p class="phone">1900 6068</p>
-            </span>
+            </div>
           </div>
           <div class="hotline">
-            <span class="box-icon">
+            <div class="box-icon">
               <img class="icon-hotline" src="img/user-icon.png" alt="icon-hotline">
-            </span>
-            <span class="content">
+            </div>
+            <div class="content">
               <p class="title">Taking care of customers overtime</p>
-              <p class="phone">Hotel: <span class="orange-number">0906 636 171</span> / Tour: <span class="orange-color">0938238004</span></p>
-            </span>
+              <p class="phone">Hotel: <span class="orange-text">0906 636 171</span> / Tour: <span class="orange-text">0938238004</span></p>
+            </div>
           </div>
         </div>
 
-        <nav class="menu">
+        <nav class="menu-main">
           <ul class="list-items">
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT HADATOUR</a></li>
@@ -58,21 +58,21 @@
 
     <section class="section-banner">
       <figcaption class="caption">
-        <h2 class="head-section">TOUR DU LỊCH PHỐ CỔ HỘI AN</h2>
+        <h2 class="section-title">TOUR DU LỊCH PHỐ CỔ HỘI AN</h2>
         <p class="slogan">THAM QUAN MUA SĂM CÙNG HƯỚNG DẪN VIÊN CHUYÊN NGHIỆP</p>
         <div class="box-button">
-          <button class="btn-viewtour">XEM TOUR</button>
-          <button class="btn-detail">CHI TIẾT</button>
+          <a class="btn-viewtour"><span>XEM TOUR</span></a>
+          <a class="btn-detail"><span>CHI TIẾT</span></a>
         </div>
       </figcaption>
     </section>
 
     <section class="section-interesting">
       <div class="container">
-        <h2 class="head-section">INTERESTING DESTINATION</h2>
-        <button class="btn-viewmore">VIEW MORE</button>
-        <ul class="list-items">
-          <li class="item">
+        <h2 class="section-title">INTERESTING DESTINATION</h2>
+        <a class="btn-viewmore">VIEW MORE</a>
+        <ul class="list-interesting">
+          <li class="list-item">
             <a href="#">
               <figure class="figure-tour">
                 <img class="image-figure" src="img/interest-1.png" alt="">
@@ -83,35 +83,35 @@
               </figure>
             </a>
           </li>
-          <li class="item">
+          <li class="list-item">
             <a href="#">
               <figure class="figure-tour">
-                <img class="image-figure" src="img/interest-2.png" alt="">
-                <figcaption class="caption-figure">
+                <img class="figure-image" src="img/interest-2.png" alt="">
+                <figcaption class="caption">
                   <p class="name-tour">JAPAN CHINA</p>
                   <p class="price">Price: <span>5.350.000$</span></p>
                 </figcaption>
               </figure>
             </a>
           </li>
-          <li class="item">
+          <li class="list-item">
             <a href="#">
               <figure class="figure-tour">
-                <img class="image-figure" src="img/interest-3.png" alt="">
-                <figcaption class="caption-figure">
+                <img class="figure-image" src="img/interest-3.png" alt="">
+                <figcaption class="caption">
                   <p class="name-tour">JAPAN CHINA</p>
                   <p class="price">Price: <span>5.350.000$</span></p>
                 </figcaption>
               </figure>
             </a>
           </li>
-          <li class="item">
+          <li class="list-item">
             <a href="#">
               <figure class="figure-tour">
-                <img class="image-figure" src="img/interest-4.png" alt="">
-                <figcaption class="caption-figure">
+                <img class="figure-image" src="img/interest-4.png" alt="">
+                <figcaption class="caption">
                   <p class="name-tour">JAPAN CHINA</p>
-                  <p class="price">Price: <span>5.350.000$</span></p>
+                  <p class="price-tour">Price: <span>5.350.000$</span></p>
                 </figcaption>
               </figure>
             </a>
@@ -122,32 +122,31 @@
 
     <section class="section-search">
       <div class="container">
-        <div class="cover-logo">
-          <img  src="img/logo.png" alt="">
+        <div class="box-logo">
+          <img  src="img/logo.png" alt="logo">
         </div>
 
         <div class="box-content">
-          <ul class="list-items">
-            <li class="item">
-              <div href="#">
-                <p class="kind-search">SEARCH TOUR</p>
+          <ul class="list-search">
+            <li class="list-item">
+              <div class="box-search">
+                <p class="title-box">SEARCH TOUR</p>
                 <P class=slogan>LET'S CHOOSE A DESTINATION</P>
               </div>
             </li>
-            <li class="item">
-              <div href="#">
-                <p class="kind-search">SEARCH HOTEL</p>
+            <li class="list-item">
+              <div class="box-search">
+                <p class="title-box">SEARCH HOTEL</p>
                 <P class=slogan>CHOOSE THE HOTEL THAT FITS YOUR NEEDS</P>
               </div>
             </li>
           </ul>
 
-          <form class="form-search">
+          <form class="form-search" method="POST">
             <input type="text" name="location" placeholder="Location">
             <input type="text" name="length" placeholder="Length">
             <input type="text" name="price" placeholder="Price">
-            <span></span>
-            <input type="button" name="search" value="Search">
+            <button class="btn-search">Search</button>
           </form>
         </div>
       </div>
@@ -155,175 +154,172 @@
 
     <section class="section-services">
       <div class="container">
-        <ul class="list-items">
-          <li class="item">
+        <ul class="list-service">
+          <li class="list-item">
             <div class="block-service">
               <h5 class="head-service">OVERSEAS TOURS</h5>
               <p class="info-service"></p>
               <a href="#">
                 <figure class="figure-tour">
                   <img class="image-figure" src="img/tour-1.png" alt="">
-                  <figcaption class="caption-figure">
-                    <span class="cover-icon">
+                  <figcaption class="caption">
+                    <div class="cover-icon">
                       <img class="icon" src="" alt="">
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info-tour">
                       <p class="name-tour">Tour Lao - Thai Lan</p>
                       <p class="time-day">2 days 3 nights</p>
                       <p class="time-date">4.500.000 $</p>
-                    </span>
+                    </div>
                   </figcaption>
                 </figure>
               </a>
-
               <a href="#">
                 <figure class="figure-tour">
                   <img class="image-figure" src="img/tour-2.png" alt="">
-                  <figcaption class="caption-figure">
-                    <span class="cover-icon">
+                  <figcaption class="caption">
+                    <div class="cover-icon">
                       <img class="icon" src="" alt="">
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info-tour">
                       <p class="name-tour">Tour Lao - Thai Lan</p>
                       <p class="time-day">2 days 3 nights</p>
                       <p class="time-date">4.500.000 $</p>
-                    </span>
+                    </div>
                   </figcaption>
                 </figure>
               </a>
-
+              
               <a href="#">
                 <figure class="figure-tour">
                   <img class="image-figure" src="img/tour-3.png" alt="">
-                  <figcaption class="caption-figure">
-                    <span class="cover-icon">
+                  <figcaption class="caption">
+                    <div class="cover-icon">
                       <img class="icon" src="" alt="">
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info-tour">
                       <p class="name-tour">Tour Lao - Thai Lan</p>
                       <p class="time-day">2 days 3 nights</p>
                       <p class="time-date">4.500.000 $</p>
-                    </span>
+                    </div>
                   </figcaption>
                 </figure>
               </a>
 
               <a href="#">
-                <p class="other-tours">other tours</p>
+                <span class="other-tours">other tours</span>
               </a>
             </div>
           </li>
-          <li class="item">
+          <li class="list-item">
             <div class="block-service">
               <h5 class="head-service">OVERSEAS TOURS</h5>
               <p class="info-service"></p>
               <a href="#">
                 <figure class="figure-tour">
-                  <img class="image-figure" src="img/tour-4.png" alt="">
-                  <figcaption class="caption-figure">
-                    <span class="cover-icon">
+                  <img class="image-figure" src="img/tour-1.png" alt="">
+                  <figcaption class="caption">
+                    <div class="cover-icon">
                       <img class="icon" src="" alt="">
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info-tour">
                       <p class="name-tour">Tour Lao - Thai Lan</p>
                       <p class="time-day">2 days 3 nights</p>
                       <p class="time-date">4.500.000 $</p>
-                    </span>
+                    </div>
                   </figcaption>
                 </figure>
               </a>
-
               <a href="#">
                 <figure class="figure-tour">
-                  <img class="image-figure" src="img/tour-5.png" alt="">
-                  <figcaption class="caption-figure">
-                    <span class="cover-icon">
+                  <img class="image-figure" src="img/tour-2.png" alt="">
+                  <figcaption class="caption">
+                    <div class="cover-icon">
                       <img class="icon" src="" alt="">
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info-tour">
                       <p class="name-tour">Tour Lao - Thai Lan</p>
                       <p class="time-day">2 days 3 nights</p>
                       <p class="time-date">4.500.000 $</p>
-                    </span>
+                    </div>
                   </figcaption>
                 </figure>
               </a>
-
+              
               <a href="#">
                 <figure class="figure-tour">
-                  <img class="image-figure" src="img/tour-6.png" alt="">
-                  <figcaption class="caption-figure">
-                    <span class="cover-icon">
+                  <img class="image-figure" src="img/tour-3.png" alt="">
+                  <figcaption class="caption">
+                    <div class="cover-icon">
                       <img class="icon" src="" alt="">
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info-tour">
                       <p class="name-tour">Tour Lao - Thai Lan</p>
                       <p class="time-day">2 days 3 nights</p>
                       <p class="time-date">4.500.000 $</p>
-                    </span>
+                    </div>
                   </figcaption>
                 </figure>
               </a>
 
               <a href="#">
-                <p class="other-tours">other tours</p>
+                <span class="other-tours">other tours</span>
               </a>
             </div>
           </li>
-          <li class="item">
+          <li class="list-item">
             <div class="block-service">
               <h5 class="head-service">OVERSEAS TOURS</h5>
               <p class="info-service"></p>
               <a href="#">
                 <figure class="figure-tour">
-                  <img class="image-figure" src="img/tour-7.png" alt="">
-                  <figcaption class="caption-figure">
-                    <span class="cover-icon">
+                  <img class="image-figure" src="img/tour-1.png" alt="">
+                  <figcaption class="caption">
+                    <div class="cover-icon">
                       <img class="icon" src="" alt="">
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info-tour">
                       <p class="name-tour">Tour Lao - Thai Lan</p>
                       <p class="time-day">2 days 3 nights</p>
                       <p class="time-date">4.500.000 $</p>
-                    </span>
+                    </div>
                   </figcaption>
                 </figure>
               </a>
-
               <a href="#">
                 <figure class="figure-tour">
-                  <img class="image-figure" src="img/tour-8.png" alt="">
-                  <figcaption class="caption-figure">
-                    <span class="cover-icon">
+                  <img class="image-figure" src="img/tour-2.png" alt="">
+                  <figcaption class="caption">
+                    <div class="cover-icon">
                       <img class="icon" src="" alt="">
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info-tour">
                       <p class="name-tour">Tour Lao - Thai Lan</p>
                       <p class="time-day">2 days 3 nights</p>
                       <p class="time-date">4.500.000 $</p>
-                    </span>
+                    </div>
                   </figcaption>
                 </figure>
               </a>
-
+              
               <a href="#">
                 <figure class="figure-tour">
-                  <img class="image-figure" src="img/tour-9.png" alt="">
-                  <figcaption class="caption-figure">
-                    <span class="cover-icon">
+                  <img class="image-figure" src="img/tour-3.png" alt="">
+                  <figcaption class="caption">
+                    <div class="cover-icon">
                       <img class="icon" src="" alt="">
-                    </span>
-                    <span class="info">
+                    </div>
+                    <div class="info-tour">
                       <p class="name-tour">Tour Lao - Thai Lan</p>
                       <p class="time-day">2 days 3 nights</p>
                       <p class="time-date">4.500.000 $</p>
-                    </span>
+                    </div>
                   </figcaption>
                 </figure>
               </a>
 
               <a href="#">
-                <p class="other-tours">other tours</p>
+                <span class="other-tours">other tours</span>
               </a>
             </div>
           </li>
@@ -333,10 +329,10 @@
 
     <section class="section-support">
       <div class="container">
-        <h2 class="title-section">SUPPORT ONLINE</h2>
-        <ul class="list-items">
-          <li class="item">
-            <p class="title">BOOK TOUR</p>
+        <h2 class="title-section">Support Online</h2>
+        <ul class="list-support">
+          <li class="list-item">
+            <p class="title">Book Tour</p>
             <div class="box-call">
               <a href="#">
                 <img src="img/icon-phone-white.png" alt="">
@@ -346,8 +342,8 @@
               </a>
             </div>
           </li>
-          <li class="item">
-            <p class="title">BOOK HOTEL</p>
+          <li class="list-item">
+            <p class="title">Book Hotel</p>
             <div class="box-call">
               <a href="#">
                 <img src="img/icon-phone-white.png" alt="">
@@ -357,8 +353,8 @@
               </a>
             </div>
           </li>
-          <li class="item">
-            <p class="title">BOOK VEHICLES</p>
+          <li class="list-item">
+            <p class="title">Book Vehicles</p>
             <div class="box-call">
               <a href="#">
                 <img src="img/icon-phone-white.png" alt="">
@@ -368,14 +364,14 @@
               </a>
             </div>
           </li>
-          <li class="item">
-            <p class="title">BOOK AIRTICKET</p>
+          <li class="list-item">
+            <p class="title">Book Airticket</p>
             <div class="box-call">
               <a href="#">
-                <img src="img/icon-phone-white.png" alt="">
+                <img src="img/icon-phone-white.png" alt="icon phone">
               </a>
               <a href="#">
-                <img src="img/icon-skype-white.png" alt="">
+                <img src="img/icon-skype-white.png" alt="icon-skype">
               </a>
             </div>
           </li>
@@ -385,10 +381,22 @@
 
     <section class="section-activity">
       <div class="container">
-        <h2 class="title-section">ACTIVITY IMAGES</h2>
-        <button class="btn-viewmore">VIEW MORE</button>
-        <ul class="list-items">
-          <li class="item">
+        <h2 class="section-title">Activity Images</h2>
+        <button class="btn-viewmore">View More</button>
+        <ul class="list-activity">
+          <li class="list-item">
+            <a href="#">
+              <figure class="figure-tour">
+                <img class="figure-image" src="" alt="">
+                <figcaption class="caption">Tour Australia - Group activities</figcaption>
+                <div class="box-time">
+                  <p class="time-day">3 days 2 nights</p>
+                  <p class="time-date">25/08/2015</p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li class="list-item">
             <a href="#">
               <figure class="figure-tour">
                 <img class="figure-image" src="" alt="">
@@ -400,11 +408,11 @@
               </figure>
             </a>
           </li>
-          <li class="item">
+          <li class="list-item">
             <a href="#">
               <figure class="figure-tour">
                 <img class="figure-image" src="" alt="">
-                <figcaption class="figure-caption">Tour Australia - Group activities</figcaption>
+                <figcaption class="caption">Tour Australia - Group activities</figcaption>
                 <div class="box-time">
                   <p class="time-day">3 days 2 nights</p>
                   <p class="time-date">25/08/2015</p>
@@ -412,19 +420,7 @@
               </figure>
             </a>
           </li>
-          <li class="item">
-            <a href="#">
-              <figure class="figure-tour">
-                <img class="figure-image" src="" alt="">
-                <figcaption class="figure-caption">Tour Australia - Group activities</figcaption>
-                <div class="box-time">
-                  <p class="time-day">3 days 2 nights</p>
-                  <p class="time-date">25/08/2015</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li class="item">
+          <li class="list-item">
             <a href="#">
               <figure class="figure-tour">
                 <img class="figure-image" src="" alt="">
@@ -444,15 +440,15 @@
 
   <footer class="footer-page">
     <div class="container">
-      <div class="block-top">
-        <div class="block-logo">
+      <div class="box-header">
+        <div class="box-logo">
           <a href="#">
             <img src="" alt="">
           </a>
         </div>
-        <div class="block-info">
-          <h6>INFOMATION</h6>
-          <ul>
+        <div class="box-info">
+          <h6 class="title-info">Infomation</h6>
+          <ul class="list-info">
             <li>
               <a href="#">About HadaTour</a>
             </li>
@@ -470,46 +466,45 @@
             </li>
           </ul>
         </div>
-        <div class="social">
-          <h6>SOCIAL</h6>
-          <ul>
+        <div class="box-social">
+          <h6 class="title-list">Social</h6>
+          <ul class="list-social">
             <li>
               <a href="#">
                 <img src="" alt="">
-                <p>facebook</p>
+                <span class="label">facebook</span>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src="" alt="">
-                <p>youtube</p>
+                <span class="label">youtube</span>
               </a>
             </li>
             <li>
               <a href="#">
                <img src="" alt="">
-               <p>Google+</p>
+               <span class="label">Google+</span>
              </a>
            </li>
            <li>
             <a href="#">
               <img src="" alt="">
-              <p>Twitter</p>
+              <span class="label">Twitter</span>
             </a>
           </li>
         </ul>
       </div>
-      <div class="email">
-        <p>Enter email to get news from HadaTour</p>
+      <div class="box-email">
+        <p class="slogan">Enter email to get news from HadaTour</p>
         <input type="email" name="email" placeholder="Please enter email here">
         <button class="btn-send"><img src="img/icon-email.png" alt=""></button>
       </div>
     </div>
-    <div class="block-bottom">
-      <p class="copyright">&copy;2008 - Copyright belong to HadaTour</p>
-      <p class="design">Design by <a href="#">hadatour.com</a></p>
-    </div>
-  </div>
-</footer>
+    <div class="box-footer">
+      <span class="copyright">&copy;2008 - Copyright belong to HadaTour</span>
+      <span class="designed-by">Design by <a href="#">hadatour.com</a></span>
+    </div>   
+  </footer>
 </body>
 </html>
