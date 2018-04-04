@@ -9,11 +9,11 @@
 </head>
 <body>
 
-  <header class="page-header">
+  <header class="page-header clear-fix">
     <div class="container">
       <div class="cover-logo clear-fix">
         <a href="#">
-          <img class="logo-page" src="img/logo.png" alt="logo">
+          <img class="logo-page" src="images/logo.png" >
         </a>
       </div>
 
@@ -21,7 +21,7 @@
         <ul class="hotline-list">
           <li class="hotline-1 hotline-item">
             <div class="hotline-icon-cover">
-              <img class="hotline-icon" src="img/icon-phone.png" alt="icon hotline">
+              <img class="hotline-icon" src="images/icon-phone.png" alt="icon hotline">
             </div>
             <div class="hotline-content">
               <p class="hotline-title">Customer service</p>
@@ -30,7 +30,7 @@
           </li>
           <li class="hotline-2 hotline-item">
             <div class="hotline-icon-cover">
-              <img class="hotline-icon" src="img/user-icon.png" alt="icon-hotline">
+              <img class="hotline-icon" src="images/user-icon.png" alt="icon-hotline">
             </div>
             <div class="hotline-content">
               <p class="hotline-title">Taking care of customers overtime</p>
@@ -60,9 +60,9 @@
       <div class="caption">
         <h2 class="section-title">Tour Travel Hoi An Ancient Town</h2>
         <p class="slogan">Travel With Professional Tour Guide</p>
-        <div class="group-links">
-          <a class="view-tour link" href="">View Tour</a>
-          <a class="detail-tour link" href="">Detail</a>
+        <div class="group-button">
+          <a class="view-tour button" href="">View Tour</a>
+          <a class="detail-tour button" href="">Detail</a>
         </div>
       </div>
     </section>
@@ -71,15 +71,15 @@
       <div class="container">
         <div class="section-title clear-fix">
           <h2 class="section-head">Interesting Destination</h2>
-          <a class="viewmore" href="">
+          <a class="viewmore button" href="">
             <span>View More</span>
-            <img class="icon-small" src="img/icon-next-small.png" alt="icon next">
+            <img class="icon-small" src="images/icon-next-small.png" alt="icon next">
           </a>
         </div>
         <ul class="interesting-list">
           <li class="interesting-item">
             <figure class="fig-tour">
-              <a href=""><img class="fig-image" src="img/interest-1.png" alt="image interesting"></a>
+              <a href=""><img class="fig-image" src="images/interest-1.png" alt="image interesting"></a>
               <figcaption class="fig-caption">
                 <p class="name">Japan China</p>
                 <p class="price">Price: <span class="blue">5.350.000$</span></p>
@@ -88,61 +88,60 @@
           </li>
           <li class="interesting-item">
             <figure class="fig-tour">
-              <a href=""><img class="fig-image" src="img/interest-2.png" alt="image interesting"></a>
+              <a href=""><img class="fig-image" src="images/interest-2.png" alt="image interesting"></a>
               <figcaption class="fig-caption">
                 <p class="name">Japan China</p>
-                <p class="price">Price: <span class="blue">5.350.000$</span></p>
+                <p class="price">Price: <span class="blue price-number">5.350.000$</span></p>
               </figcaption>
             </figure>
           </li>
           <li class="interesting-item">
             <figure class="fig-tour">
-              <a href=""><img class="fig-image" src="img/interest-3.png" alt="image interesting"></a>
+              <a href=""><img class="fig-image" src="images/interest-3.png" alt="image interesting"></a>
               <figcaption class="fig-caption">
                 <p class="name">Japan China</p>
-                <p class="price">Price: <span class="blue">5.350.000$</span></p>
+                <p class="price">Price: <span class="blue price-number">5.350.000$</span></p>
               </figcaption>
             </figure>
           </li>
           <li class="interesting-item">
             <figure class="fig-tour">
-              <a href=""><img class="fig-image" src="img/interest-4.png" alt="image interesting"></a>
+              <a href=""><img class="fig-image" src="images/interest-4.png" alt="image interesting"></a>
               <figcaption class="fig-caption">
                 <p class="name">Japan China</p>
-                <p class="price">Price: <span class="blue">5.350.000$</span></p>
+                <p class="price">Price: <span class="blue price-number">5.350.000$</span></p>
               </figcaption>
             </figure>
           </li>
         </ul>
       </div>
-      <div class="background-interesting"></div>
     </section>
 
     <section class="section-search">
       <div class="container">
         <div class="cover-logo">
-          <a href=""><img class="logo-page" src="img/logo.png" alt="logo"></a>
+          <a href=""><img class="logo-page" src="images/logo.png" alt="logo"></a>
         </div>
         <div class="section-content">
           <div class="tabs">
             <ul class="tabs-list">
               <li class="tab-item">
-                <label class="label-search" for="radio-tour">
-                  <input id="radio-tour" type="radio" name="search" checked="true">
-                  <a class="tab-search active">
-                    <span class="name">Search Tour</span>
-                    <span class=slogan>Let's Choose A Destination</span>
-                  </a>
-                </label>
+                <input id="radio-tour" type="radio" name="search" checked="true">
+                <div class="tab-search">
+                  <label for="radio-tour">
+                    <span class="name clear-fix">Search Tour</span>
+                    <span class="slogan clear-fix">Let's Choose A Destination</span>
+                  </label>
+                </div>
               </li>
               <li class="tab-item">
-                <label class="label-search" for="radio-hotel">
-                  <input id="radio-hotel" type="radio" name="search">
-                  <a class="tab-search">
-                    <span class="name">Search Hotel</span>
-                    <span class=slogan>Choose The Hotel That Fits Your Needs</span>
-                  </a>
-                </label>
+                <input id="radio-hotel" type="radio" name="search">
+                <div class="tab-search">
+                  <label for="radio-hotel">
+                    <span class="name clear-fix">Search Hotel</span>
+                    <span class="slogan clear-fix">Choose The Hotel That Fits Your Needs</span>
+                  </label>
+                </div>
               </li>
             </ul>
           </div>   
@@ -153,7 +152,7 @@
                 <input type="text" name="length" placeholder="Length">
                 <input type="text" name="price" placeholder="Price">
                 <span class="line"></span>
-                <button class="btn-search" type="submit"><img class="icon-search" src="img/icon-search.png" alt="icon search"><span>Search</span></button>
+                <button class="btn-search" type="submit"><img class="icon-search" src="images/icon-search.png" alt="icon search"><span>Search</span></button>
               </form>
             </div>
             <div id="form-search-2" class="tab-content-item">
@@ -162,7 +161,7 @@
                 <input type="text" name="length" placeholder="Length">
                 <input type="text" name="price" placeholder="Price">
                 <span class="line"></span>
-                <button class="btn-search" type="submit"><img class="icon-search" src="img/icon-search.png" alt="icon search"><span>Search</span></button>
+                <button class="btn-search" type="submit"><img class="icon-search" src="images/icon-search.png" alt="icon search"><span>Search</span></button>
               </form>
             </div>
           </div>
@@ -179,15 +178,15 @@
               <p class="service-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <ul class="tour-list clear-fix">
                 <li class="tour-item">
-                  <div class="tour top-item" style="background-image: url(img/tour-1.png)">
+                  <div class="tour top-item" style="background-image: url(images/tour-1.png)">
                     <a class="gradient-image" href=""></a>
                     <div class="caption">
                       <div class="box-left">
                         <div class="cover-icon">
-                          <img class="icon" src="img/icon-tour.png" alt="icon tour">
+                          <img class="icon" src="images/icon-tour.png" alt="icon tour">
                         </div>
                         <div class="info-tour">
-                          <p class="name-tour"><a href="">Tour Lao - Thai Lan</a></p>
+                          <p class="name-tour"><a class="link-tour" href="">Tour Lao - Thai Lan</a></p>
                           <p class="time-day">2 days 3 nights</p>
                         </div>
                       </div>
@@ -198,15 +197,15 @@
                   </div>
                 </li>
                 <li class="tour-item">
-                  <div class="tour" style="background-image: url(img/tour-4.png)">
+                  <div class="tour" style="background-image: url(images/tour-4.png)">
                     <a class="gradient-image" href=""></a>
                     <div class="caption">
                       <div class="box-left">
                         <div class="cover-icon">
-                          <img class="icon" src="img/icon-tour.png" alt="icon tour">
+                          <img class="icon" src="images/icon-tour.png" alt="icon tour">
                         </div>
                         <div class="info-tour">
-                          <p class="name-tour"><a href="">Tour Lao - Thai Lan</a></p>
+                          <p class="name-tour"><a class="link-tour" href="">Tour Lao - Thai Lan</a></p>
                           <p class="time-day">2 days 3 nights</p>
                         </div>
                       </div>
@@ -217,15 +216,15 @@
                   </div>
                 </li>
                 <li class="tour-item">
-                  <div class="tour" style="background-image: url(img/tour-5.png)">
+                  <div class="tour" style="background-image: url(images/tour-5.png)">
                     <a class="gradient-image" href=""></a>
                     <div class="caption">
                       <div class="box-left">
                         <div class="cover-icon">
-                          <img class="icon" src="img/icon-tour.png" alt="icon tour">
+                          <img class="icon" src="images/icon-tour.png" alt="icon tour">
                         </div>
                         <div class="info-tour">
-                          <p class="name-tour"><a href="">Tour Lao - Thai Lan</a></p>
+                          <p class="name-tour"><a class="link-tour" href="">Tour Lao - Thai Lan</a></p>
                           <p class="time-day">2 days 3 nights</p>
                         </div>
                       </div>
@@ -237,7 +236,7 @@
                 </li>
               </ul>
               <div class="other-tour">
-                <a href="#">other tours<img src="img/icon-next.png" alt="icon next"></a>
+                <a href="#">other tours<img src="images/icon-next.png" alt="icon next"></a>
               </div>
             </div>
           </li>
@@ -247,15 +246,15 @@
               <p class="service-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <ul class="tour-list clear-fix">
                 <li class="tour-item">
-                  <div class="tour top-item" style="background-image: url(img/tour-2.png)">
+                  <div class="tour top-item" style="background-image: url(images/tour-2.png)">
                     <a class="gradient-image" href=""></a>
                     <div class="caption">
                       <div class="box-left">
                         <div class="cover-icon">
-                          <img class="icon" src="img/icon-tour.png" alt="icon tour">
+                          <img class="icon" src="images/icon-tour.png" alt="icon tour">
                         </div>
                         <div class="info-tour">
-                          <p class="name-tour"><a href="">Tour Lao - Thai Lan</a></p>
+                          <p class="name-tour"><a class="link-tour" href="">Tour Lao - Thai Lan</a></p>
                           <p class="time-day">2 days 3 nights</p>
                         </div>
                       </div>
@@ -266,15 +265,15 @@
                   </div>
                 </li>
                 <li class="tour-item">
-                  <div class="tour" style="background-image: url(img/tour-5.png)">
+                  <div class="tour" style="background-image: url(images/tour-5.png)">
                     <a class="gradient-image" href=""></a>
                     <div class="caption">
                       <div class="box-left">
                         <div class="cover-icon">
-                          <img class="icon" src="img/icon-tour.png" alt="icon tour">
+                          <img class="icon" src="images/icon-tour.png" alt="icon tour">
                         </div>
                         <div class="info-tour">
-                          <p class="name-tour"><a href="">Tour Lao - Thai Lan</a></p>
+                          <p class="name-tour"><a class="link-tour" href="">Tour Lao - Thai Lan</a></p>
                           <p class="time-day">2 days 3 nights</p>
                         </div>
                       </div>
@@ -285,15 +284,15 @@
                   </div>
                 </li>
                 <li class="tour-item">
-                  <div class="tour" style="background-image: url(img/tour-6.png)">
+                  <div class="tour" style="background-image: url(images/tour-6.png)">
                     <a class="gradient-image" href=""></a>
                     <div class="caption">
                       <div class="box-left">
                         <div class="cover-icon">
-                          <img class="icon" src="img/icon-tour.png" alt="icon tour">
+                          <img class="icon" src="images/icon-tour.png" alt="icon tour">
                         </div>
                         <div class="info-tour">
-                          <p class="name-tour"><a href="">Tour Lao - Thai Lan</a></p>
+                          <p class="name-tour"><a class="link-tour" href="">Tour Lao - Thai Lan</a></p>
                           <p class="time-day">2 days 3 nights</p>
                         </div>
                       </div>
@@ -305,7 +304,7 @@
                 </li>
               </ul>
               <div class="other-tour">
-                <a href="#">other tours<img src="img/icon-next.png" alt="icon next"></a>
+                <a href="#">other tours<img src="images/icon-next.png" alt="icon next"></a>
               </div>
             </div>
           </li>
@@ -315,15 +314,15 @@
               <p class="service-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <ul class="tour-list clear-fix">
                 <li class="tour-item">
-                  <div class="tour top-item" style="background-image: url(img/tour-3.png)">
+                  <div class="tour top-item" style="background-image: url(images/tour-3.png)">
                     <a class="gradient-image" href=""></a>
                     <div class="caption">
                       <div class="box-left">
                         <div class="cover-icon">
-                          <img class="icon" src="img/icon-tour.png" alt="icon tour">
+                          <img class="icon" src="images/icon-tour.png" alt="icon tour">
                         </div>
                         <div class="info-tour">
-                          <p class="name-tour"><a href="">Tour Lao - Thai Lan</a></p>
+                          <p class="name-tour"><a class="link-tour" href="">Tour Lao - Thai Lan</a></p>
                           <p class="time-day">2 days 3 nights</p>
                         </div>
                       </div>
@@ -334,15 +333,15 @@
                   </div>
                 </li>
                 <li class="tour-item">
-                  <div class="tour" style="background-image: url(img/tour-8.png)">
+                  <div class="tour" style="background-image: url(images/tour-8.png)">
                     <a class="gradient-image" href=""></a>
                     <div class="caption">
                       <div class="box-left">
                         <div class="cover-icon">
-                          <img class="icon" src="img/icon-tour.png" alt="icon tour">
+                          <img class="icon" src="images/icon-tour.png" alt="icon tour">
                         </div>
                         <div class="info-tour">
-                          <p class="name-tour"><a href="">Tour Lao - Thai Lan</a></p>
+                          <p class="name-tour"><a class="link-tour" href="">Tour Lao - Thai Lan</a></p>
                           <p class="time-day">2 days 3 nights</p>
                         </div>
                       </div>
@@ -353,15 +352,15 @@
                   </div>
                 </li>
                 <li class="tour-item">
-                  <div class="tour" style="background-image: url(img/tour-9.png)">
+                  <div class="tour" style="background-image: url(images/tour-9.png)">
                     <a class="gradient-image" href=""></a>
                     <div class="caption">
                       <div class="box-left">
                         <div class="cover-icon">
-                          <img class="icon" src="img/icon-tour.png" alt="icon tour">
+                          <img class="icon" src="images/icon-tour.png" alt="icon tour">
                         </div>
                         <div class="info-tour">
-                          <p class="name-tour"><a href="">Tour Lao - Thai Lan</a></p>
+                          <p class="name-tour"><a class="link-tour" href="">Tour Lao - Thai Lan</a></p>
                           <p class="time-day">2 days 3 nights</p>
                         </div>
                       </div>
@@ -373,7 +372,7 @@
                 </li>
               </ul>
               <div class="other-tour">
-                <a href="#">other tours<img src="img/icon-next.png" alt="icon next"></a>
+                <a href="#">other tours<img src="images/icon-next.png" alt="icon next"></a>
               </div>
             </div>
           </li>
@@ -391,10 +390,10 @@
               <p class="title-kind">Book Tour</p>
               <div class="box-call">
                 <a href="#">
-                  <img src="img/icon-phone-white.png" alt="icon">
+                  <img class="icon-support" src="images/icon-phone-white.png" alt="icon">
                 </a>
                 <a href="#">
-                  <img src="img/icon-skype-white.png" alt="icon">
+                  <img class="icon-support" src="images/icon-skype-white.png" alt="icon">
                 </a>
               </div>
             </li>
@@ -402,10 +401,10 @@
               <p class="title-kind">Book Hotel</p>
               <div class="box-call">
                 <a href="#">
-                  <img src="img/icon-phone-white.png" alt="icon">
+                  <img class="icon-support" src="images/icon-phone-white.png" alt="icon">
                 </a>
                 <a href="#">
-                  <img src="img/icon-skype-white.png" alt="icon">
+                  <img class="icon-support" src="images/icon-skype-white.png" alt="icon">
                 </a>
               </div>
             </li>
@@ -413,10 +412,10 @@
               <p class="title-kind">Book Vehicles</p>
               <div class="box-call">
                 <a href="#">
-                  <img src="img/icon-phone-white.png" alt="icon">
+                  <img class="icon-support" src="images/icon-phone-white.png" alt="icon">
                 </a>
                 <a href="#">
-                  <img src="img/icon-skype-white.png" alt="icon">
+                  <img class="icon-support" src="images/icon-skype-white.png" alt="icon">
                 </a>
               </div>
             </li>
@@ -424,10 +423,10 @@
               <p class="title-kind">Book Airticket</p>
               <div class="box-call">
                 <a href="#">
-                  <img src="img/icon-phone-white.png" alt="icon phone">
+                  <img class="icon-support" src="images/icon-phone-white.png" alt="icon phone">
                 </a>
                 <a href="#">
-                  <img src="img/icon-skype-white.png" alt="icon-skype">
+                  <img class="icon-support" src="images/icon-skype-white.png" alt="icon-skype">
                 </a>
               </div>
             </li>
@@ -440,16 +439,16 @@
       <div class="container">
         <div class="section-title clear-fix">
           <h2 class="section-head">Activity Images</h2>
-          <a class="viewmore" href="">
+          <a class="viewmore button" href="">
             <span>View More</span>
-            <img class="icon-small" src="img/icon-next-small.png" alt="">
+            <img class="icon-small" src="images/icon-next-small.png" alt="">
           </a>
         </div>
         <ul class="activity-list">
           <li class="activity-item">
             <figure class="figure-tour">
               <div class="box-image">
-                <img class="activity-image" src="img/activity-1.png" alt="activity image">
+                <img class="activity-image" src="images/activity-1.png" alt="activity image">
                 <a class="gradient-box" href=""></a>
                 <figcaption class="caption"><a href="#">Tour Australia - Group activities</a></figcaption>
               </div>
@@ -462,7 +461,7 @@
           <li class="activity-item">
             <figure class="figure-tour">
               <div class="box-image">
-                <img class="activity-image" src="img/activity-2.png" alt="activity image">
+                <img class="activity-image" src="images/activity-2.png" alt="activity image">
                 <a class="gradient-box" href=""></a>
                 <figcaption class="caption"><a href="#">Tour Australia - Group activities</a></figcaption>
               </div>
@@ -475,7 +474,7 @@
           <li class="activity-item">
             <figure class="figure-tour">
               <div class="box-image">
-                <img class="activity-image" src="img/activity-3.png" alt="activity image">
+                <img class="activity-image" src="images/activity-3.png" alt="activity image">
                 <a class="gradient-box" href=""></a>
                 <figcaption class="caption"><a href="#">Tour Australia - Group activities</a></figcaption>
               </div>
@@ -488,7 +487,7 @@
           <li class="activity-item">
             <figure class="figure-tour">
               <div class="box-image">
-                <img class="activity-image" src="img/activity-4.png" alt="activity image">
+                <img class="activity-image" src="images/activity-4.png" alt="activity image">
                 <a class="gradient-box" href=""></a>
                 <figcaption class="caption"><a href="#">Tour Australia - Group activities</a></figcaption>
               </div>
@@ -506,58 +505,58 @@
   <footer class="page-footer">
     <div class="container">
       <div class="box-header clear-fix">
-        <ul class="list-content">
-          <li class="list-item box-logo">
+        <ul class="content-list">
+          <li class="box-logo content-item">
             <div class="cover-logo">
               <a href="">
-                <img class="logo-page" src="img/logo.png" alt="logo page">
+                <img class="logo-page" src="images/logo.png" alt="logo page">
               </a>
             </div>
           </li>
-          <li class="list-item box-info">
+          <li class="box-info content-item">
             <h6 class="box-title">Infomation</h6>
-            <ul class="list-info">
-              <li class="info-item"><a href="#">About HadaTour</a></li>
-              <li class="info-item"><a href="#">Contact Infomation</a></li>
-              <li class="info-item"><a href="#">Terms of membership</a></li>
-              <li class="info-item"><a href="#">Payment methods</a></li>
-              <li class="info-item"><a href="#">Recruitment</a></li>
+            <ul class="info-list">
+              <li class="info-item"><a class="info-link" href="#">About HadaTour</a></li>
+              <li class="info-item"><a class="info-link" href="#">Contact Infomation</a></li>
+              <li class="info-item"><a class="info-link" href="#">Terms of membership</a></li>
+              <li class="info-item"><a class="info-link" href="#">Payment methods</a></li>
+              <li class="info-item"><a class="info-link" href="#">Recruitment</a></li>
             </ul>
           </li>
-          <li class="list-item box-social">
+          <li class="box-social content-item">
             <h6 class="box-title">Social</h6>
-            <ul class="list-social">
+            <ul class="social-list">
               <li class="social-item">
-                <a href="#">
-                  <img src="img/icon-facebook.png" alt="icon">
+                <a class="social-link" href="#">
+                  <img class="social-icon" src="images/icon-facebook.png" alt="icon">
                   <span class="label">Facebook</span>
                 </a>
               </li>
               <li class="social-item">
-                <a href="#">
-                  <img src="img/icon-google.png" alt="icon">
+                <a class="social-link" href="#">
+                  <img class="social-icon" src="images/icon-google.png" alt="icon">
                   <span class="label">Google plus</span>
                 </a>
               </li>
               <li class="social-item">
-                <a href="#">
-                  <img src="img/icon-twitter.png" alt="icon">
+                <a class="social-link" href="#">
+                  <img class="social-icon" src="images/icon-twitter.png" alt="icon">
                   <span class="label">twitter</span>
                 </a>
               </li>
               <li class="social-item">
-                <a href="#">
-                  <img src="img/icon-youtube.png" alt="icon">
+                <a class="social-link" href="#">
+                  <img class="social-icon" src="images/icon-youtube.png" alt="icon">
                   <span class="label">youtube</span>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="list-item box-email">
+          <li class="box-email content-item">
             <p class="slogan">Enter email to get news from HadaTour</p>
             <form class="form-send-email" action="submit" method="post" accept-charset="utf-8">
               <input type="email" name="email" placeholder="Please enter email here">
-              <button class="btn-send" type="submit"><img src="img/icon-email.png" alt="icon letter"></button>
+              <button class="btn-send" type="submit"><img class="email-icon" src="images/icon-email.png" alt="icon letter"></button>
             </form>
           </li>
         </ul>    
