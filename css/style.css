@@ -12,6 +12,12 @@ body {
   font-family: 'Arial';
 }
 
+@media (max-width: 1600px) {
+  body {
+    max-width: 100%;
+  }
+}
+
 ul, ol {
   list-style: none;
 }
@@ -39,7 +45,14 @@ ul, ol {
 .container {
   width: 1240px;
   margin: 0 auto;
+
 }
+@media (max-width: 1600px) {
+  .container {
+    width: calc(100% - 100px); 
+  }
+}
+
 .button {
   width: 120px;
   height: 35px;
@@ -135,6 +148,12 @@ ul, ol {
   margin-right: 25px;
 }
 
+@media (max-width: 1600px) {
+  .page-header .mm-item {
+    margin-right: 15px;
+  }
+}
+
 .page-header .mm-item:last-child {
   margin-right: 0;
 }
@@ -144,7 +163,12 @@ ul, ol {
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
-  
+}
+
+@media (max-width: 1600px) {
+  .page-header .mm-item .mm-link {
+    font-size: 14px;
+  }
 }
 
 .page-header .mm-link:hover,
@@ -192,10 +216,12 @@ ul, ol {
 .section-interesting {
   height: 374px;
 }
+
 .section-interesting .section-title {
   height: 36px;
   margin-top: -110px;
 }
+
 .section-interesting .section-head {
   font: 24px 'Myriad Pro Light';
   float: left;
@@ -208,18 +234,14 @@ ul, ol {
 }
 
 .section-interesting .interesting-list {
-  display: flex;
-  justify-content: center;
-  vertical-align: center;
   margin-top: 20px;
 }
 
 .section-interesting .interesting-item {
   float: left;
-  width: 25%;
+  width: calc((100% - 60px)/4);
   margin-right: 20px;
   padding-bottom: 10px;
-
 }
 
 .section-interesting .interesting-item:last-child {
@@ -245,7 +267,6 @@ ul, ol {
 .section-interesting .fig-caption {
   height: 60px;
   padding: 0 10px 0;
-
 }
 
 .section-interesting .fig-caption .name {
@@ -288,8 +309,9 @@ ul, ol {
   height: 100%;
 }
 .section-search .section-content {
+  width: calc(100% - 230px);
   float: right;
-  margin-top: 30px;
+  margin: 30px 0 0;
 } 
 
 .section-search .tab-item {
@@ -352,10 +374,13 @@ ul, ol {
   width: 480px;
 }
 
-.section-search .form-search input[name="length"] {
-  width: 145px;
+@media (max-width: 1600px) {
+  .section-search .form-search input[name="location"] {
+    width: calc(100% - 520px);
+  }
 }
 
+.section-search .form-search input[name="length"],
 .section-search .form-search input[name="price"] {
   width: 145px;
 }
@@ -369,15 +394,15 @@ ul, ol {
 
 }
 
-.section-search .btn-search {
+.section-search button.btn-search {
   width: 165px;
   font-size: 14px;
   color: #fff;
   background-color: #0ec0ee;
   border: 1px solid #0ec0ee;
+  padding-top: 3px;
   margin-right: 0;
   cursor: pointer;
-  padding-top: 3px;
 }
 
 .section-search .btn-search .icon-search {
@@ -397,13 +422,9 @@ ul, ol {
   background-color: #f5f6f6;
 }
 
-.section-service .service-list {
-  display: flex;
-  justify-content: center;
-}
-
 .section-service .service-item {
-  width: 33.33%;
+  width: calc((100% - 20px)/3);
+  float: left;
   margin-right: 10px;
   margin-top: 30px;
 }
@@ -574,7 +595,7 @@ ul, ol {
 }
 
 .section-support .title-section {
-  font: 'Myriad Pro' 36px;
+  font: 36px 'Myriad Pro';
   text-transform: uppercase;
   color: #fff;
   padding-top: 50px;
@@ -588,6 +609,7 @@ ul, ol {
   margin-top: 25px;
   list-style-type: none;
   background: rgba(0, 0, 0, .3);
+  border-radius: 3px;
 }
 
 .section-support .item-list {
@@ -638,12 +660,11 @@ ul, ol {
 .section-activity .activity-list {
   list-style: none;
   padding-top: 30px;
-  display: flex;
-  justify-content: center;
 }
 
 .section-activity .activity-item {
-  width: 25%;
+  float: left;
+  width: calc((100% - 60px)/4);
   margin-right: 20px;
 }
 
