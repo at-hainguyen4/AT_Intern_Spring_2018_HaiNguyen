@@ -358,7 +358,7 @@ ol {
 
 @media (max-width: 1024px) {
   .section-search .section-content {
-    width: calc(100% - 270px);
+    width: calc(100% - 190px);
   }
 }
 
@@ -434,11 +434,11 @@ ol {
 
 @media (max-width: 1024px) {
   .section-search .form-search input[name="location"] {
-    width: calc(100% - 650px);
+    width: calc(100% - 420px);
   }
   .section-search .form-search input[name="length"],
   .section-search .form-search input[name="price"] {
-    width: 100px;
+    width: 120px;
   }
 }
 
@@ -464,7 +464,7 @@ ol {
 
 @media (max-width: 1024px) {
   .section-search button.btn-search {
-    width: 100px;
+    width: 120px;
   }
 }
 
@@ -810,10 +810,16 @@ ol {
   width: 20%;
   margin-top: 10px;
 }
+@media (max-width: 1024px) {
+  .page-footer .box-logo {
+    width: 15%;
+    margin-top: 10px;
+  }
+}
 
 .page-footer .logo-page {
-  width: 200px;
-  height: 130px;
+  width: 100%;
+  
 }
 
 .page-footer .box-info {
@@ -876,6 +882,12 @@ ol {
   float: right;
 }
 
+@media (max-width: 1024px) {
+  .page-footer .box-email {
+    width: 35%;
+
+  }
+}
 .page-footer .box-email .slogan {
   font-size: 14px;
 }
