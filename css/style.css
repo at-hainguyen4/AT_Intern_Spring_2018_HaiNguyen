@@ -18,7 +18,14 @@ body {
   }
 }
 
-ul, ol {
+@media (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+}
+
+ul,
+ol {
   list-style: none;
 }
 
@@ -47,9 +54,16 @@ ul, ol {
   margin: 0 auto;
 
 }
+
 @media (max-width: 1600px) {
   .container {
     width: calc(100% - 100px); 
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: calc(100% - 40px);
   }
 }
 
@@ -67,6 +81,7 @@ ul, ol {
   display: inline-block;
   vertical-align: top;
 }
+
 .clear-fix::after {
   content: "";
   clear: both;
@@ -83,6 +98,13 @@ ul, ol {
   width: 140px;
   height: 90px;
   float: left;
+}
+
+@media (max-width: 1024px) {
+  .page-header .cover-logo {
+    width: 120px;
+    height: 80px;
+  }
 }
 
 .page-header .logo-page {
@@ -154,6 +176,11 @@ ul, ol {
   }
 }
 
+@media (max-width: 1024px) {
+  .page-header .mm-item {
+    margin-right: 10px;
+  }
+}
 .page-header .mm-item:last-child {
   margin-right: 0;
 }
@@ -168,6 +195,12 @@ ul, ol {
 @media (max-width: 1600px) {
   .page-header .mm-item .mm-link {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-header .mm-item .mm-link {
+    font-size: 12px;
   }
 }
 
@@ -304,15 +337,30 @@ ul, ol {
   float: left;
   margin-top: 70px;
 }
+
+@media (max-width: 1024px) {
+  .section-search .cover-logo {
+    width: 160px;
+    height: 100px;
+  }
+}
+
 .section-search .logo-page {
   width: 100%;
   height: 100%;
 }
+
 .section-search .section-content {
   width: calc(100% - 230px);
   float: right;
   margin: 30px 0 0;
 } 
+
+@media (max-width: 1024px) {
+  .section-search .section-content {
+    width: calc(100% - 270px);
+  }
+}
 
 .section-search .tab-item {
   display: inline-block;
@@ -367,7 +415,6 @@ ul, ol {
   padding-left: 10px;
   margin-right: 10px;
   outline: none;
-  
 }
 
 .section-search .form-search input[name="location"] {
@@ -383,6 +430,16 @@ ul, ol {
 .section-search .form-search input[name="length"],
 .section-search .form-search input[name="price"] {
   width: 145px;
+}
+
+@media (max-width: 1024px) {
+  .section-search .form-search input[name="location"] {
+    width: calc(100% - 650px);
+  }
+  .section-search .form-search input[name="length"],
+  .section-search .form-search input[name="price"] {
+    width: 100px;
+  }
 }
 
 .section-search .form-search .line {
@@ -403,6 +460,12 @@ ul, ol {
   padding-top: 3px;
   margin-right: 0;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .section-search button.btn-search {
+    width: 100px;
+  }
 }
 
 .section-search .btn-search .icon-search {
@@ -478,6 +541,8 @@ ul, ol {
   display: inline-block;
   width: 100%;
   height: 100%;
+  background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
   background: linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
 }
 
@@ -692,7 +757,9 @@ ul, ol {
   z-index: 102;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0, .5));
+  background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
 }
 
 .section-activity .caption {
