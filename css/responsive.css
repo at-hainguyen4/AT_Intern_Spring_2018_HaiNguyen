@@ -461,6 +461,9 @@
   .hide-sm {
     display: none;
   }
+  .section-banner .section-title {
+    font-size: 26px;
+  }
   .section-head {
     font-size: 16px;
     padding-top: 7px;
@@ -491,10 +494,13 @@
     margin-top: 10px;
   }
   .section-support .title-section {
-    font-size: 30px;
+    font-size: 22px;
   }
-  .section-support .title-section .title-kind {
-    font-size: 14px;
+  .list-support .item-list .title-kind {
+    font-size: 16px;
+  }
+  .list-support .box-call {
+    margin-top: 10px;
   }
   .section-activity .section-head {
     font-size: 14px;
