@@ -171,7 +171,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .body {
     width: 100%;
   }
@@ -454,5 +454,63 @@
   }
   .box-footer {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hide-sm {
+    display: none;
+  }
+  .section-head {
+    font-size: 16px;
+    padding-top: 7px;
+  }
+  .tab-search .name {
+    font-size: 14px;
+  }
+  .section-interesting .button {
+    width: 100px;
+    height: 30px;
+    padding: 7px;
+  }
+  .section-interesting .button span {
+    font-size: 14px;
+  }
+  .form-search input[name="location"],
+  .form-search input[name="price"],
+  .form-search input[name="length"],
+  .form-search button {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .form-search input[name="price"],
+  .form-search input[name="length"],
+  .form-search button {
+    margin-top: 10px;
+  }
+  .section-support .title-section {
+    font-size: 30px;
+  }
+  .section-support .title-section .title-kind {
+    font-size: 14px;
+  }
+  .section-activity .section-head {
+    font-size: 14px;
+  }
+  .section-activity .button {
+    width: 100px;
+    height: 30px;
+    padding: 7px;
+  }
+  .section-activity .button span {
+    font-size: 14px;
+  }
+  .form-send-email input[type="email"] {
+    height: 40px;
+  }
+  .form-send-email .btn-send {
+    height: 40px;
   }
 }
