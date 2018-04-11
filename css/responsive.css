@@ -195,7 +195,7 @@
 		height: 100%;
 		object-fit: fill;
 	}
-	input[name="check-menu"]:checked + .box-menu {
+	input[name="check-menu"]:checked ~ .box-menu {
 		display: block;
 	}
 	.btn-close {
