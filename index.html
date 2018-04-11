@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hana Tour</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
 
@@ -16,8 +17,12 @@
           <img class="logo-page" src="images/logo.png" >
         </a>
       </div>
-
+      <label for="menu-mobile">
+        <a class="btn-menu hide-lg hide-md hide-xs" href=""><img class="icon-menu" src="images/icon-menu.png" alt="icon menu"></a>
+      </label>
+      <input class="hide" type="checkbox" name="check-menu" id="menu-mobile">
       <div class="box-menu">
+        <a class="btn-close hide-lg hide-md hide-xs" href="">X</a>
         <ul class="hotline-list">
           <li class="hotline-1 hotline-item">
             <div class="hotline-icon-cover">
@@ -51,13 +56,14 @@
             <li class="mm-item"><a class="mm-link" href="">Contact</a></li>
           </ul>
         </nav>
+
       </div>
     </div>
   </header>
 
   <main class="page-main">
-    <section class="section-banner clear-fix">
-      <div class="caption">
+    <section class="section-banner">
+      <div class="caption-banner">
         <h2 class="section-title">Tour Travel Hoi An Ancient Town</h2>
         <p class="slogan">Travel With Professional Tour Guide</p>
         <div class="group-button">
@@ -67,7 +73,7 @@
       </div>
     </section>
 
-    <section class="section-interesting clear-fix">
+    <section class="section-interesting">
       <div class="container">
         <div class="section-title clear-fix">
           <h2 class="section-head">Interesting Destination</h2>
@@ -82,7 +88,7 @@
               <a href=""><img class="fig-image" src="images/interest-1.png" alt="image interesting"></a>
               <figcaption class="fig-caption">
                 <p class="name">Japan China</p>
-                <p class="price">Price: <span class="blue">5.350.000$</span></p>
+                <p class="price">Price: <span class="price-number blue">5.350.000$</span></p>
               </figcaption>
             </figure>
           </li>
@@ -91,7 +97,7 @@
               <a href=""><img class="fig-image" src="images/interest-2.png" alt="image interesting"></a>
               <figcaption class="fig-caption">
                 <p class="name">Japan China</p>
-                <p class="price">Price: <span class="blue price-number">5.350.000$</span></p>
+                <p class="price">Price: <span class="price-number blue">5.350.000$</span></p>
               </figcaption>
             </figure>
           </li>
@@ -100,7 +106,7 @@
               <a href=""><img class="fig-image" src="images/interest-3.png" alt="image interesting"></a>
               <figcaption class="fig-caption">
                 <p class="name">Japan China</p>
-                <p class="price">Price: <span class="blue price-number">5.350.000$</span></p>
+                <p class="price">Price: <span class="price-number blue">5.350.000$</span></p>
               </figcaption>
             </figure>
           </li>
@@ -109,7 +115,7 @@
               <a href=""><img class="fig-image" src="images/interest-4.png" alt="image interesting"></a>
               <figcaption class="fig-caption">
                 <p class="name">Japan China</p>
-                <p class="price">Price: <span class="blue price-number">5.350.000$</span></p>
+                <p class="price">Price: <span class="price-number blue">5.350.000$</span></p>
               </figcaption>
             </figure>
           </li>
@@ -117,7 +123,7 @@
       </div>
     </section>
 
-    <section class="section-search clear-fix">
+    <section class="section-search">
       <div class="container">
         <div class="cover-logo">
           <a href=""><img class="logo-page" src="images/logo.png" alt="logo"></a>
@@ -169,7 +175,7 @@
       </div>
     </section>
 
-    <section class="section-service clear-fix">
+    <section class="section-service">
       <div class="container">
         <ul class="service-list">
           <li class="service-item">
@@ -307,62 +313,63 @@
       </div>
     </section>
 
-    <section class="section-support clear-fix">
-      <div class="gradient-box"></div>
-      <div class="container">
-        <div class="box-content">
-          <h2 class="title-section">Support Online</h2>
-          <ul class="list-support">
-            <li class="item-list">
-              <p class="title-kind">Book Tour</p>
-              <div class="box-call">
-                <a class="support-link" href="#">
-                  <img class="icon-support" src="images/icon-phone-white.png" alt="icon">
-                </a>
-                <a class="support-link" href="#">
-                  <img class="icon-support" src="images/icon-skype-white.png" alt="icon">
-                </a>
-              </div>
-            </li>
-            <li class="item-list">
-              <p class="title-kind">Book Hotel</p>
-              <div class="box-call">
-                <a class="support-link" href="#">
-                  <img class="icon-support" src="images/icon-phone-white.png" alt="icon">
-                </a>
-                <a class="support-link" href="#">
-                  <img class="icon-support" src="images/icon-skype-white.png" alt="icon">
-                </a>
-              </div>
-            </li>
-            <li class="item-list">
-              <p class="title-kind">Book Vehicles</p>
-              <div class="box-call">
-                <a class="support-link" href="#">
-                  <img class="icon-support" src="images/icon-phone-white.png" alt="icon">
-                </a>
-                <a class="support-link" href="#">
-                  <img class="icon-support" src="images/icon-skype-white.png" alt="icon">
-                </a>
-              </div>
-            </li>
-            <li class="item-list">
-              <p class="title-kind">Book Airticket</p>
-              <div class="box-call">
-                <a class="support-link" href="#">
-                  <img class="icon-support" src="images/icon-phone-white.png" alt="icon phone">
-                </a>
-                <a class="support-link" href="#">
-                  <img class="icon-support" src="images/icon-skype-white.png" alt="icon-skype">
-                </a>
-              </div>
-            </li>
-          </ul>
+    <section class="section-support">
+      <div class="gradient-box">
+        <div class="container">
+          <div class="box-content">
+            <h2 class="title-section">Support Online</h2>
+            <ul class="list-support">
+              <li class="item-list">
+                <p class="title-kind">Book Tour</p>
+                <div class="box-call">
+                  <a class="support-link" href="#">
+                    <img class="icon-support" src="images/icon-phone-white.png" alt="icon">
+                  </a>
+                  <a class="support-link" href="#">
+                    <img class="icon-support" src="images/icon-skype-white.png" alt="icon">
+                  </a>
+                </div>
+              </li>
+              <li class="item-list">
+                <p class="title-kind">Book Hotel</p>
+                <div class="box-call">
+                  <a class="support-link" href="#">
+                    <img class="icon-support" src="images/icon-phone-white.png" alt="icon">
+                  </a>
+                  <a class="support-link" href="#">
+                    <img class="icon-support" src="images/icon-skype-white.png" alt="icon">
+                  </a>
+                </div>
+              </li>
+              <li class="item-list">
+                <p class="title-kind">Book Vehicles</p>
+                <div class="box-call">
+                  <a class="support-link" href="#">
+                    <img class="icon-support" src="images/icon-phone-white.png" alt="icon">
+                  </a>
+                  <a class="support-link" href="#">
+                    <img class="icon-support" src="images/icon-skype-white.png" alt="icon">
+                  </a>
+                </div>
+              </li>
+              <li class="item-list">
+                <p class="title-kind">Book Airticket</p>
+                <div class="box-call">
+                  <a class="support-link" href="#">
+                    <img class="icon-support" src="images/icon-phone-white.png" alt="icon phone">
+                  </a>
+                  <a class="support-link" href="#">
+                    <img class="icon-support" src="images/icon-skype-white.png" alt="icon-skype">
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section-activity clear-fix">
+    <section class="section-activity">
       <div class="container">
         <div class="section-title clear-fix">
           <h2 class="section-head">Activity Images</h2>
@@ -377,9 +384,9 @@
               <div class="box-image">
                 <img class="activity-image" src="images/activity-1.png" alt="activity image">
                 <a class="gradient-box" href=""></a>
-                <figcaption class="caption"><a class="link-activity" href="#">Tour Australia - Group activities</a></figcaption>
+                <figcaption class="caption-activity"><a class="link-activity" href="#">Tour Australia - Group activities</a></figcaption>
               </div>
-              <div class="box-time">
+              <div class="box-time-activity">
                 <p class="time-day">3 days 2 nights</p>
                 <p class="time-date">25/08/2015</p>
               </div>
@@ -390,9 +397,9 @@
               <div class="box-image">
                 <img class="activity-image" src="images/activity-2.png" alt="activity image">
                 <a class="gradient-box" href=""></a>
-                <figcaption class="caption"><a class="link-activity" href="#">Tour Australia - Group activities</a></figcaption>
+                <figcaption class="caption-activity"><a class="link-activity" href="#">Tour Australia - Group activities</a></figcaption>
               </div>
-              <div class="box-time">
+              <div class="box-time-activity">
                 <p class="time-day">3 days 2 nights</p>
                 <p class="time-date">25/08/2015</p>
               </div>
@@ -403,9 +410,9 @@
               <div class="box-image">
                 <img class="activity-image" src="images/activity-3.png" alt="activity image">
                 <a class="gradient-box" href=""></a>
-                <figcaption class="caption"><a class="link-activity" href="#">Tour Australia - Group activities</a></figcaption>
+                <figcaption class="caption-activity"><a class="link-activity" href="#">Tour Australia - Group activities</a></figcaption>
               </div>
-              <div class="box-time">
+              <div class="box-time-activity">
                 <p class="time-day">3 days 2 nights</p>
                 <p class="time-date">25/08/2015</p>
               </div>
@@ -416,9 +423,9 @@
               <div class="box-image">
                 <img class="activity-image" src="images/activity-4.png" alt="activity image">
                 <a class="gradient-box" href=""></a>
-                <figcaption class="caption"><a class="link-activity" href="#">Tour Australia - Group activities</a></figcaption>
+                <figcaption class="caption-activity"><a class="link-activity" href="#">Tour Australia - Group activities</a></figcaption>
               </div>
-              <div class="box-time">
+              <div class="box-time-activity">
                 <p class="time-day">3 days 2 nights</p>
                 <p class="time-date">25/08/2015</p>
               </div>
@@ -433,10 +440,10 @@
     <div class="container">
       <div class="box-header clear-fix">
         <ul class="content-list">
-          <li class="box-logo content-item">
+          <li class="box-logo-footer content-item">
             <div class="cover-logo">
               <a href="">
-                <img class="logo-page" src="images/logo.png" alt="logo page">
+                <img class="logo-footer" src="images/logo.png" alt="logo page">
               </a>
             </div>
           </li>
