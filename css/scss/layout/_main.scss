@@ -1,0 +1,835 @@
+/* section banner */
+.section-banner {
+  width: 100%;
+  height: 830px;
+  background-image: url('../images/banner.png');
+  text-align: center;
+  padding-top: 275px;
+  .section-title {
+    font: 52px $font-facebook-kt;
+    color: $white-color;
+    text-transform: uppercase;
+  }
+}
+
+.caption-banner {
+  .slogan {
+    font: bold 18px $font-bryant;
+    color: $white-color;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .group-button {
+    margin-top: 80px;
+    .view-tour {
+      border: 2px solid $white-color;
+      background-color: rgba(0, 0, 0, .0);
+    }
+    .detail-tour {
+      border: 2px solid $white-color;
+      background-color: rgba(0, 0, 0, .0);
+    }
+    .button {
+      &:hover {
+        background-color: $secondary-color;
+        border:  2px solid $secondary-color;
+      }
+    }
+  }
+}
+
+/* section intersting */
+.section-interesting {
+ padding-bottom: 30px;
+ margin-top: -110px;
+}
+
+.interesting-list {
+  margin-top: 20px;
+}
+
+.interesting-item {
+  float: left;
+  width: calc((100% - 60px)/4);
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  .fig-tour {
+    @include border-radius(5px, 5px, 5px, 5px);
+    background-color: $white-color;
+    box-shadow: 0 2px 0 0 $box-shadow-color;
+    padding-bottom: 15px;
+    a {
+      width: 100%;
+      height: 210px;
+      display: inline-block;
+      overflow: hidden;
+    }
+    
+  }
+  .fig-image {
+    @include object-fit(cover);
+    @include border-radius(5px, 5px, 0, 0);
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    &:hover {
+      width: 100% + 20%;
+      height: 210px + 50px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .fig-caption {
+    padding: 0 10px 0;
+    .name {
+      font-size: 15px;
+      font-weight: bold;
+      color: $dark-text-color;
+      text-transform: uppercase;
+      margin-top: 15px;
+    }
+    .price {
+      font-size: 14px;
+      color: $dark-text-color;
+      margin-top: 10px;
+    }
+    .price-number {
+      font-size: 18px;
+      font-weight: bold;
+      color: $secondary-color;
+    }
+  }
+} 
+
+/* section search */
+.section-search {
+  background: url('../images/bg-search.png');
+  padding-bottom: 20px;
+  .cover-logo {
+    width: 200px;
+    height: 120px;
+    float: left;
+    margin-top: 70px;
+  }
+  .logo-page {
+    width: 100%;
+  }
+  .section-content {
+    width: calc(100% - 230px);
+    float: right;
+    margin: 30px 0 0;
+  } 
+}
+
+.tabs {
+  .tab-item {
+    display: inline-block;
+  }
+  .tab-search {
+    text-decoration: none;
+    color: $dark-text-color;
+    margin-bottom: -1px;
+    padding: 20px 30px 15px;
+    display: inline-block;
+  }
+}
+
+.section-search {
+  input[name="search"] {
+    display: none;
+  }
+  input[name="search"] {
+    &:checked + .tab-search {
+      @include border-radius(5px, 5px, 0, 0);
+      border: 1px solid $border-gray-light-color;
+      border-bottom: 0;
+      background: $white-color;
+    }
+  }
+}
+
+.tab-search {
+  .name {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: $font-myriad-pro;
+  }
+  .slogan {
+    text-transform: uppercase;
+    font-family: $font-myriad-pro;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+
+.form-search {
+  padding-top: 40px;
+  border-top: 1px solid $border-gray-light-color;
+  input,
+  button {
+    @include border-radius(20px, 20px, 20px, 20px);
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid $border-gray-light-color;
+    padding-left: 10px;
+    margin-right: 10px;
+    outline: none;
+  }
+  input[name="location"] {
+    width: 480px;
+  }
+  input[name="length"],
+  input[name="price"] {
+    width: 145px;
+  }
+  .line {
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    border-right: 2px solid $border-gray-light-color;
+    margin-right: 10px;
+  }
+}
+
+button.btn-search {
+  width: 165px;
+  font-size: 14px;
+  color: $white-color;
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  padding-top: 3px;
+  margin-right: 0;
+  cursor: pointer;
+  .icon-search {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    vertical-align: top;
+  }
+}
+
+#form-search-2 {
+  display: none;
+}
+
+/* section-service */
+.section-service {
+  background-color: $bg-color;
+  padding-bottom: 40px;
+}
+
+.service-item {
+  @include border-radius(5px, 5px, 5px, 5px);
+  width: calc((100% - 20px)/3);
+  float: left;
+  margin-right: 10px;
+  margin-top: 30px;
+  background-color: $white-color;
+  padding: 20px 0 0;
+  box-shadow: 0 2px 0 0 $box-shadow-color;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.service-title {
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.service-info {
+  font-size: 15px;
+  padding: 0 20px;
+  margin-top: 15px;
+  color: $gray-light-color;
+}
+
+.service-list {
+  .tour-list {
+    margin-top: 15px;
+    .tour  {
+      position: relative;
+      width: 100%;
+      height: 80px;
+      z-index: 100;
+      background-size: cover;
+      -webkit-transition: all 3s ;
+      -moz-transition: all 3s ;
+      -ms-transition: all 3s ;
+      -o-transition: all 3s ;
+      transition: all 3s ;
+      &:hover {
+        background-size: 120%;
+      }
+    }
+    .tour.top-item {
+      height: 230px;
+    }
+  }
+}
+
+.tour .gradient-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: -o-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+  background: -ms-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+  background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+}
+
+.tour {
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index: 102;
+    .icon {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      bottom: 15px;
+      left: 20px;
+      z-index: 103;
+    }
+    .name-tour {
+      position: absolute;
+      bottom: 40px;
+      left: 80px;
+      z-index: 103;
+      font-weight: bold;
+      color: $white-color;
+    }
+    .time-day {
+      position: absolute;
+      bottom: 10px;
+      left: 80px;
+      z-index: 103;
+      color: $white-color;
+      font-size: 14px;
+    }
+    .price-tour {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      z-index: 103;
+      font-weight: bold;
+      font-size: 14px;
+      color: $white-color;
+    }
+    .link-tour {
+      text-decoration: none;
+      color: $white-color;
+      font-size: 16px;
+    }
+    .icon-star img {
+      @include object-fit(fill);
+      height: 14px;
+      width: 83px;
+    }
+  }
+}
+
+.other-tour {
+  position: relative;
+  float: right;
+  margin: 15px;
+  .other-tour-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $black-color;
+    vertical-align: center;
+    padding-right: 30px;
+  }
+  .icon-next {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+  }
+}
+
+/* support online */
+.section-support {
+  background-image: url('../images/bg-support.png');
+  background-position: left -200px;
+  .gradient-box {
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+  }
+  .container {
+    position: relative;
+    z-index: 103;
+  }
+  .box-content {
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+  }
+  .title-section {
+    font: 36px $font-myriad-pro;
+    text-transform: uppercase;
+    color: $white-color;
+    padding-top: 50px;
+  }
+}
+
+.list-support {
+  @include border-radius(3px, 3px, 3px, 3px);
+  width: 90%;
+  padding: 25px 0;
+  margin: 25px auto 40px;
+  list-style-type: none;
+  background: rgba(0, 0, 0, .3);
+  .item-list {
+    display: inline-block;
+    width: 24.5%;
+    text-align: center;
+    .title-kind {
+      font: 24px $font-myriad-pro;
+      text-transform: uppercase;
+      color: $white-color;
+    }
+  }
+  .box-call {
+    margin-top: 20px;
+  }
+  .support-link {
+
+    &:first-child {
+      margin-right: 24px;
+    }
+    &:hover .icon-support {
+      -webkit-transform: rotate(3600deg);
+      -moz-transform: rotate(3600deg);
+      -ms-transform: rotate(3600deg);
+      -o-transform: rotate(3600deg);
+      transform: rotate(3600deg);
+    }
+  } 
+  .icon-support {
+    width: 34px;
+    height: 34px;
+    -webkit-transition: all 1.0s;
+    -moz-transition: all 1.0s;
+    -ms-transition: all 1.0s;
+    -o-transition: all 1.0s;
+    transition: all 1.0s;
+  }
+}
+
+/* section activity */
+
+.section-activity {
+  padding: 30px 0;
+  .section-head {
+    font: 24px $font-myriad-pro;
+    color: $black-color;
+  }
+}
+
+.activity-list {
+  list-style: none;
+  padding-top: 30px;
+}
+
+.activity-item {
+  float: left;
+  width: calc((100% - 60px)/4);
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  .box-image {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    min-height: 350px;
+  }
+  .figure-tour {
+    .gradient-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 102;
+      width: 100%;
+      height: 100%;
+      background: -o-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+      background: -ms-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+      background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+      background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, .0), rgba(0, 0, 0,.5));
+    }
+  }
+  .caption-activity {
+    position: absolute;
+    z-index: 103;
+    bottom: 20px;
+    left: 10px;
+  }
+  .box-time-activity {
+    @include border-radius(0, 0, 5px, 5px);
+    height: 50px;
+    padding: 15px;
+    background:  $dark-bg-color;
+  }
+  .time-day {
+    float: left;
+    font-size: 12px;
+    color: $white-color;
+  }
+  .time-date {
+    float: right;
+    font-size: 12px;
+    color: $white-color;
+  }
+}
+
+.activity-image {
+  @include border-radius(5px, 5px, 0, 0);
+  @include object-fit(cover) ;
+  position: absolute;
+  z-index: 101;
+  width: 100%;
+  height: 100%;
+}
+
+.link-activity {
+  font-size: 18px;
+  color: $white-color;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1599px){
+  .form-search {
+    input,
+    button {
+      width: calc((100% - 60px)/4);
+    }
+    input[name="location"] {
+      width: calc((100% - 60px)/4);
+    }
+    input[name="length"],
+    input[name="price"] {
+      width: calc((100% - 60px)/4);
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .section-banner {
+    .section-title {
+      font-size: 38px;
+    }
+    .slogan {
+      font-size: 14px;
+    }
+  }
+  .interesting-item {
+    width: calc((100% - 30px)/4);
+    margin-right: 10px;
+  }
+  .section-search {
+    .cover-logo {
+      width: 150px;
+      margin-top: 70px;
+    }
+    .section-content {
+      width: calc(100% - 180px);
+      margin: 30px 0 0;
+    }
+  }
+  .tab-item {
+    .tab-search {
+      padding: 15px 20px 10px;
+    }
+  }
+  .form-search {
+    padding-top: 20px;
+    input[name="location"] {
+      width: calc((100% - 60px)/4);
+    }
+    input[name="length"],
+    input[name="price"] {
+      width: calc((100% - 60px)/4);
+    }
+  }
+  input,
+  button {
+    width: calc((100% - 60px)/4);
+  }
+  .tour {
+    .caption {
+      .icon {
+        bottom: 5px;
+        left: 5px;
+      }
+      .name-tour {
+        bottom: 30px;
+        left: 50px;
+      }
+      .time-day {
+        bottom: 10px;
+        left: 50px;
+        font-size: 12px;
+      }
+      .price-tour {
+        bottom: 10px;
+        right: 10px;
+        font-size: 14px;
+      }
+      .link-tour {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .list-support {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .section-support .title-section {
+    padding-top: 30px;
+  }
+  .activity-item {
+    width: calc((100% - 20px)/2);
+  }
+  .activity-item:nth-child(1),
+  .activity-item:nth-child(3) {
+    margin-right: 10px;
+  }
+  .activity-item:nth-child(2),
+  .activity-item:nth-child(4) {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  .activity-item:nth-child(3),
+  .activity-item:nth-child(4) {
+    margin-top: 20px;
+  }
+  .activity-item {
+    .box-time-activity {
+      padding: 10px;
+    }
+  }
+
+  .activity-item  {
+    .time-date {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-banner {
+    .section-title {
+      font-size: 38px;
+    }
+    .slogan {
+      font-size: 14px;
+    }
+  }
+  .interesting-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .section-search {
+    .cover-logo {
+      width: 150px;
+      margin-top: 70px;
+      display: none;
+    }
+    .section-content {
+      width: 100%;
+      margin: 30px 0 0;
+    }
+  }
+
+  .tab-item {
+    .tab-search {
+      padding: 5px 10px 5px;
+    }
+  }
+  .tab-search {
+    .name {
+      font-size: 20px;
+    }
+    .slogan {
+      font-size: 10px;
+      margin-top: 5px;
+    }
+  }
+  .form-search {
+    padding-top: 20px;
+    input[name="location"],
+    input[name="price"] {
+      width: calc((100% - 30px)/2);
+      margin-right: 10px;
+      margin-left: 0;
+    }
+    input[name="length"],
+    button {
+      width: calc((100% - 30px)/2);
+      margin-left: 10px;
+      margin-right: 0;
+    }
+    input[name="price"],
+    button {
+      margin-top: 10px;
+    }
+    .line {
+      display: none;
+    }
+  }
+
+  .tour {
+    .caption {
+      .icon {
+        bottom: 5px;
+        left: 5px;
+      }
+      .name-tour {
+        bottom: 30px;
+        left: 50px;
+      }
+      .time-day {
+        bottom: 10px;
+        left: 50px;
+        font-size: 12px;
+      }
+      .price-tour {
+        bottom: 10px;
+        right: 10px;
+        font-size: 14px;
+      }
+      .link-tour {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .list-support {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .section-support {
+    .title-section {
+      padding-top: 30px;
+    }
+  }
+  .activity-item:nth-child(1),
+  .activity-item:nth-child(2),
+  .activity-item:nth-child(3),
+  .activity-item:nth-child(4) {
+    width:100%;
+    margin: 10px 0 0;
+
+  }
+
+  .activity-item {
+    .box-time-activity {
+      padding: 10px;
+    }
+    .time-date {
+      margin-bottom: 5px;
+    }
+  }
+
+  .service-item {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .list-support {
+    width: 100%;
+    .item-list {
+      width: 49%;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .tab-search {
+    .name {
+      font-size: 14px;
+    }
+  }
+  .section-interesting {
+    .button {
+      width: 100px;
+      height: 30px;
+      padding: 7px;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .form-search {
+    input[name="location"],
+    input[name="price"],
+    input[name="length"],
+    button {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    input[name="price"],
+    input[name="length"],
+    button {
+      margin-top: 10px;
+    }
+  }
+  
+  .section-support {
+    .title-section {
+      font-size: 22px;
+    }
+  }
+  .list-support {
+    .title-kind {
+      font-size: 16px;
+    }
+    .box-call {
+      margin-top: 10px;
+    }
+  }
+  .section-activity {
+    .section-head {
+      font-size: 14px;
+    }
+    .button {
+      width: 100px;
+      height: 30px;
+      padding: 7px;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

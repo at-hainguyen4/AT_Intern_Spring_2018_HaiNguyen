@@ -1,0 +1,205 @@
+
+/* page header */
+.page-header {
+	padding: 15px 0;
+	background: $white-color;
+	.cover-logo{
+		width: 140px;
+		float: left;
+	}
+	.logo-page {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.box-menu {
+	float: right;
+}
+
+.hotline-list {
+	float: right;
+}
+
+.hotline-item {
+	display: inline-block;
+	.hotline-icon-cover {
+		width: 35px;
+		height: 35px;
+		float: left;
+		margin-top: 3px;
+	}
+}
+
+.hotline-icon-cover {
+	.icon-hotline {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.hotline-content {
+	float: right;
+	margin-left: 7px;
+	.number {
+		color: $primary-color;
+		text-decoration: none;
+	}
+}
+
+.hotline-1 {
+	margin-right: 35px;
+}
+
+.hotline-title {
+	font-size: 12px;
+}
+
+.hotline-phone {
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.main-menu {
+	float: right;
+	margin-top: 25px;
+}
+
+.mm-item {
+	display: inline-block;
+	margin-right: 25px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.mm-link {
+	font-size: 16px;
+	color: $black-color;
+	text-transform: uppercase;
+	text-decoration: none;
+	&:hover {
+		color: $primary-color;
+	}
+}
+
+.mm-link.active {
+	color: $primary-color;
+}
+
+@media screen and (max-width: 1599px){
+	.mm-item {
+		margin-right: 10px;
+	}
+	.mm-link {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.mm-item {
+		margin-right: 8px;
+	}
+	.mm-link {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.btn-menu {
+		position: absolute;
+		top: 25px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+		display: inline-block;    
+	}
+	.icon-menu {
+		@include object-fit(fill);
+		width: 100%;
+		height: 100%;
+	}
+	input[name="check-menu"]:checked + .box-menu {
+		display: block;
+	}
+
+	.box-menu {
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		background: #fff;
+		overflow-y: auto;
+		z-index: 100;
+		display: none;
+	}
+	.page-header {
+		.cover-logo{
+			width: 90%;
+			text-align: center;
+		}
+		.logo-page {
+			width: 70px;
+			height: 50px;
+		}
+	}
+
+	.hotline-list {
+		float: none;
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+	
+	.hotline-content {
+		float: none;
+		margin-left: 0;
+	}
+	.hotline-item {
+		display: block;
+		float: none;
+		text-align: center;
+		padding: 10px 0;
+		border-top: 1px solid #000;
+		.hotline-icon-cover {
+			width: 15px;
+			height: 15px;
+			display: none;
+		}
+	}
+	.hotline-icon-cover .icon-hotline {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.hotline-1 {
+		margin-right: 0;
+	}
+
+	.hotline-title {
+		font-size: 12px;
+	}
+
+	.hotline-phone {
+		font-size: 13px;
+		margin-top: 3px;
+	}
+
+	.main-menu {
+		float: none;
+		margin-top: 0;
+	}
+
+	.mm-item {
+		margin-right: 0;
+		display: block;
+		padding: 10px 0;
+		border-top: 1px solid #000;
+		text-align: center;
+	}
+
+	.mm-link {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,93 @@
+body {
+	max-width: 1600px;
+	margin: 0 auto;
+	background: $bg-color;
+	font-family: $font-stack;
+}
+a:hover {
+	transition: all 0.3s;
+}
+
+section::after {
+	@extend %clearfix;
+}
+
+.container {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+.hide {
+	display: none;
+}
+
+.hide-lg {
+	display: none;
+}
+
+.section-head {
+	font: 24px 'Myriad Pro Light';
+	float: left;
+	color: $white-color;
+	text-transform: uppercase;
+	padding-top: 5px;
+}
+
+
+.clear-fix::after {
+	@extend %clearfix;
+}
+
+@media screen and (max-width: 1599px) {
+	.body {
+		width: 100%;
+	}
+	.container {
+		width: calc(100% - 100px);
+	}
+	.hide-md {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.body {
+		width: 100%;
+	}
+	.container {
+		width: calc(100% - 30px);
+	}
+	.hide-xs {
+		display: none;
+	}
+	.section-head {
+		font-size: 20px;
+		padding-top: 7px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.body {
+		width: 100%;
+	}
+	.container {
+		width: calc(100% - 30px);
+	}
+	.section-head {
+		font-size: 20px;
+		padding-top: 7px;
+	}
+}
+@media screen and (max-width: 479px) {
+	.hide-sm {
+		display: none;
+	}
+	.section-banner .section-title {
+		font-size: 26px;
+	}
+	.section-head {
+		font-size: 16px;
+		padding-top: 7px;
+	}
+}
+
