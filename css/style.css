@@ -39,8 +39,8 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote::before, blockquote::after,
+q::before, q::after {
   content: '';
   content: none; }
 
@@ -312,7 +312,10 @@ table {
 .collumn-sm-12 {
   width: 100%; }
 
-section::after, .clear-fix::after {
+[class^="collumn-"] {
+  float: left; }
+
+.row::after, section::after, .clear-fix::after {
   content: '';
   display: block;
   clear: both; }

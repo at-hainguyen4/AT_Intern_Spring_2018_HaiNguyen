@@ -18,3 +18,9 @@
     width: (100%/12)*$i;
   }
 }
+.row::after {
+  @extend %clearfix;
+}
+[class^="collumn-"] {
+  float: left;
+} 
