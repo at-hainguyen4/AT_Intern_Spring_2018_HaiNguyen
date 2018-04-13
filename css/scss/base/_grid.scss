@@ -1,20 +1,20 @@
 @for $i from 1 through 12 {
-	.collumn-lg-#{$i} {
-		width: (100%/12)*$i;
-	}
+  .collumn-lg-#{$i} {
+    width: (100%/12)*$i;
+  }
 }
 @for $i from 1 through 12 {
-	.collumn-md-#{$i} {
-		width: (100%/12)*$i;
-	}
+  .collumn-md-#{$i} {
+    width: (100%/12)*$i;
+  }
 }
 @for $i from 1 through 12 {
-	.collumn-xs-#{$i} {
-		width: (100%/12)*$i;
-	}
+  .collumn-xs-#{$i} {
+    width: (100%/12)*$i;
+  }
 }
 @for $i from 1 through 12 {
-	.collumn-sm-#{$i} {
-		width: (100%/12)*$i;
-	}
+  .collumn-sm-#{$i} {
+    width: (100%/12)*$i;
+  }
 }

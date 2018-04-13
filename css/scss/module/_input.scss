@@ -1,7 +1,7 @@
 
 input {
-	@include border-radius(5px, 5px, 5px, 5px);
-	width: 145px;
-	height: 40px;
-	border: 1px solid $gray-light-color;
+  @include border-radius(5px, 5px, 5px, 5px);
+  width: 145px;
+  height: 40px;
+  border: 1px solid $gray-light-color;
 }
